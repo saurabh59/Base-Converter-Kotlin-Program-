@@ -1,0 +1,21 @@
+How to convert from any base to any other base?
+
+Step 1. Divide the given number into integer part and fractional part.
+Step 2. Convert the integer number to decimal base.
+        2a. Reverse the number.
+        2b. Iterate through the number digit by digit.
+        2c. If digit is character, convert it into corresponding digit by subtracting the digit from 'A'
+        and adding 10 to the result.
+        2d. Once we have digit as number, we multiply with base raised to power(from to 0 to n)
+        2e. Take sum of all the result till 2d for each digit.
+Step 3. Now, divide the decimal to target base, until quotient is greater than or equal to target base, keep collecting
+remainder.
+    Step 3a. Here, if remainder is greater than 10, we need to convert it to character, by adding 'A' to difference of
+    remainder and 10.
+    Step 3b. Append the remainder.
+
+
+Similarly, we can convert fractional part as well, difference being that, this we will multiply with negative powers of
+source base while converting from given base to decimal base.
+
+In the program , we needed to convert only till 5 decimal places.
