@@ -1,2 +1,2 @@
 # Base-Converter-Kotlin-Program-
-Convert number from any base to any other base.
+Convert given number in base to any other base.
